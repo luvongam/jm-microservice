@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="scheduling" />
+        <module name="upload-files" />
         <module name="demo1" />
         <module name="discovery" />
         <module name="gateway" />
@@ -34,6 +35,7 @@
       <module name="scheduling" options="-parameters" />
       <module name="school" options="-parameters" />
       <module name="student" options="-parameters" />
+      <module name="upload-files" options="-parameters" />
     </option>
   </component>
 </project>
