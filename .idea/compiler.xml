@@ -11,6 +11,7 @@
         <module name="demo1" />
         <module name="discovery" />
         <module name="gateway" />
+        <module name="consumer-web-service" />
       </profile>
       <profile name="Annotation profile for school" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -26,10 +27,11 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="consumer-web-service" options="-parameters" />
       <module name="demo1" options="-parameters" />
       <module name="discovery" options="-parameters" />
       <module name="gateway" options="-parameters" />
-      <module name="scheduling" options="-parameters --add-exports java.base/jdk.internal.org.objectweb.asm.util=ALL-UNNAMED" />
+      <module name="scheduling" options="-parameters" />
       <module name="school" options="-parameters" />
       <module name="student" options="-parameters" />
     </option>
