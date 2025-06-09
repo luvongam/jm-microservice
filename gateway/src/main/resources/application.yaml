@@ -1,0 +1,43 @@
+spring:
+  application:
+    name: API-GATEWAY
+  cloud:
+    gateway:
+      server:
+        webmvc:
+          routes-map:
+            student-service:
+              uri: lb://STUDENT-SERVICE
+              predicates:
+                - Path=/students/**
+            school-service:
+              uri: lb://SCHOOL-SERVICE
+              predicates:
+                - Path=/schools/**
+
+
+server:
+  port: 8080
+
+
+
+#  cloud:
+#    gateway:
+#      discovery:
+#        locator:
+#          enabled: true
+
+#    routes:
+#      - id: STUDENT-SERVICE
+#        uri: lb://STUDENT-SERVICE
+#        predicates:
+#          - Path=/students/**
+#      - id: SCHOOL-SERVICE
+#        uri: lb://SCHOOL-SERVICE
+#        predicates:
+#          - Path=/schools/**
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
