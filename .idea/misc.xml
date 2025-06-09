@@ -12,6 +12,8 @@
         <option value="$PROJECT_DIR$/scheduling/pom.xml" />
         <option value="$PROJECT_DIR$/consumer-web-service/pom.xml" />
         <option value="$PROJECT_DIR$/upload-files/pom.xml" />
+        <option value="$PROJECT_DIR$/redis-spring/pom.xml" />
+        <option value="$PROJECT_DIR$/graphql/pom.xml" />
       </list>
     </option>
   </component>
